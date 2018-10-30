@@ -8,4 +8,7 @@
 
 
 // DOCUMENT READY FUNCTION BELOW
-
+$("#shoot").click(function(){
+    $("#userChioce").text($("#input").val());
+    
+});
