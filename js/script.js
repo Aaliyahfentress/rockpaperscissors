@@ -5,10 +5,14 @@
 //GLOBAL VARIABLES
 /* global $ */
 
+var computerChoice;
+var winner; 
+var randomNumber;
+randomNumber=0;
 
 
 // DOCUMENT READY FUNCTION BELOW
 $("#shoot").click(function(){
-    $("#userChioce").text($("#input").val());
+    $("#userChoice").text($("#input").val());
     
 });
