@@ -11,7 +11,6 @@ var winner;
 winner="";
 var userChoice;
 userChoice="";
-var randomNumber=Math.random();
 
 
 
@@ -20,15 +19,25 @@ $("#shoot").click(function(){
     userChoice=$("#input").val();
     $("#userChoice").text(userChoice);
     
-});
-console.log(randomNumber);
-    if(randomNumber < .10) {
-        $("#computerChoice").html("Rock"); 
-    } else if (randomNumber > .20) {
-        $("#computerChoice").html("Paper");
-    } else if (randomNumber < .40) {
-        $("#computerChoice").html("Scissor");
-    }
+    var randomNumber=Math.random();
+    console.log(randomNumber);
     
- 
+    var testVariable;
+    var rand2 = Math.random();
+    if (rand2 > .5) {
+        testVariable = 'foo';
+    }
+    else {
+        testVariable = 'bar';
+    }
+
+    if(randomNumber > .10) {
+        $("#computerChoice").text("Rock"); 
+    } else if (randomNumber > .20) {
+        $("#computerChoice").text("Paper");
+    } else if (randomNumber < .40) {
+        $("#computerChoice").text("Scissor");
+    } else $("#computerChoice").text("test");
+    
+});
 
